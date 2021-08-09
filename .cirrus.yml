@@ -1,7 +1,7 @@
 env:
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with the whole history
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone the aosp-builder repo
-    rclone_config: "ENCRYPTED[8b18bed9d37bd79f1ff115acd10dc666434a40afe2718d54b7089a13fb693f0b1c05a5069d8d7ff1d2945cca533fedb4]"
+    rclone_config: "ENCRYPTED[7cc3831730cbe761bcd082be3126bab2f5fb84f9a84d842f671e43425f16808e947c1c74c56695abce70eb5c9b75c86d]"
 
 task:
     name: makeme
