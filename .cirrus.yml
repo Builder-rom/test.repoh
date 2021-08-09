@@ -11,10 +11,8 @@ task:
       cpu: 8
       memory: 32G
     setupall:
-      - apt update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y tzdata curl git sudo
-      - bash <(curl https://raw.githubusercontent.com/Hellomaria9009/scripts/master/setup/android_build_env.sh)
-      - git config --global user.name Your Name
-      - git config --global user.email you@example.com
+      - chmod +x set
+      - ./set
     download_background_script:
       - chmod +x download
       - ./download
