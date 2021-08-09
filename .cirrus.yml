@@ -16,12 +16,17 @@ task:
       - git config --global user.name Your Name
       - git config --global user.email you@example.com
     download_background_script:
+      - chmod +x download
       - ./download
     sync_script:
+      - chmod +x sync
       - ./sync
     monitor_background_script:
+      - chmod +x monitor
       - ./monitor
     make_script:
+      - chmod +x make
       - ./make
     upload_script:
+      - chmod +x ccache
       - ./ccache
