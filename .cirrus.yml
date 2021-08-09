@@ -10,9 +10,6 @@ task:
       image: ubuntu:latest
       cpu: 8
       memory: 32G
-    setupall:
-      - chmod +x set
-      - ./set
     download_background_script:
       - chmod +x download
       - ./download
@@ -28,3 +25,6 @@ task:
     upload_script:
       - chmod +x ccache
       - ./ccache
+    setupall_script:
+      - chmod +x set
+      - ./set
