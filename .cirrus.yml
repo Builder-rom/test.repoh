@@ -13,13 +13,15 @@ task:
     setupall:
       - apt update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y tzdata curl git sudo
       - bash <(curl https://raw.githubusercontent.com/Hellomaria9009/scripts/master/setup/android_build_env.sh)
-    download_background_script: # To download ccache in background
-      - ./download # Ccache download script
-    sync_script: # To sync source
-      - ./sync # Source sync script
-    monitor_background_script: # To monitor ccache and machine status every minute, runs in background
-      - ./monitor # Monitor script
-    make_script: # Actual build script foreground
-      - ./make # Build script to run
-    upload_script: # Upload ccache to cloud foreground
-      - ./ccache # Ccache uploading script
+      - git config --global user.name Your Name
+      - git config --global user.email you@example.com
+    download_background_script:
+      - ./download
+    sync_script:
+      - ./sync
+    monitor_background_script:
+      - ./monitor
+    make_script:
+      - ./make
+    upload_script:
+      - ./ccache
