@@ -2,7 +2,7 @@
 cd /tmp/rom # Depends on where source got synced
 
 # Normal build steps
-cd Project
+cd project
 source build/envsetup.sh
 lunch dot_RMX2001-userdebug
 export CCACHE_DIR=/tmp/ccache
