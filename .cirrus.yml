@@ -18,7 +18,7 @@ task:
       name: AX61-1
     isolation:
       container:
-        image: ubuntu:latest
+        image: apon77/aosp:cirrus
         cpu: 24
         memory: 60G
         volumes:
